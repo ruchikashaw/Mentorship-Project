@@ -3,6 +3,7 @@
     <title>Daily Trivia</title>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="news.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -44,55 +45,29 @@
     
         </div>
         <div class="news">
-            <div class="searchbar">
-                <form id="search-form2">
-                    <input type="search"
-                    placeholder="type here"
-                    id="search-input"
-                    required
-                    autocomplete="off"
-                    />
-                    <br>
-                </br>
-                <button id="search-button">Search</button>
-            </div>
-                </form>
-
-            <div class="news-container">
-            <div class="news-body" >
-       
-    <div class="news-box">
-       
-            <h2 id="business">Business-news</h2>
+            <div class="app">
+                <div class="screen main-screen">
+                     <div class="logo">
+                         NEWS APP
+                     </div>
+                     <div class="categories"></div>
+                     <div class="news-list"></div>
+                </div>
         
-        <div class="grid-container" id="contain3">
-
-        </div>
-    </div>
-            </div>
-            <div class="news-body">
-    <div class="news-box">
-       
-            <h2 id="science">Science-news</h2>
-       
-        <div class="grid-container" id="contain4">
-        </div>
-    </div>
-            </div>
-            <div class="news-body">
-                
-                    <div class="news-box">
-       
-            <h2 id="sport">Sport-news</h2>
+                <div class="screen news-screen hidden">
+                   <div class="header">
+                       
+                       <div class="title"></div>
+                   </div>
         
-        <div class="grid-container" id="contain5">
-        </div>
-    </div>
+                   <div class="news-frame">
+                       <iframe id="news-frame"></iframe>
+                   </div>
+                </div>
             </div>
-            </div>
         </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="news.js"></script>
+           
+    <script src="newsapi.js"></script>
         <script src="script.js"></script>
     </body>
     
