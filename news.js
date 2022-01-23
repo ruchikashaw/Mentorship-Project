@@ -38,10 +38,10 @@ $.ajax({
                                            
                                             <div class="card-body">
                                                 <h5 class="card-title" id="entertainment-title1">
-                                                    ${data.articles[i].title.slice(0, 50) + "...."}
+                                                    ${data.articles[i].title.slice(0, 30) + "...."}
                                                 </h5>
                                                 <p class="card-text" id="entertainment-text1">
-                                                    ${data.articles[i].description.slice(0, 80) + "...."}
+                                                    ${data.articles[i].description.slice(0, 40) + "...."}
                                                 </p>
                                                 <a href="${data.articles[i].url}" class="more-detail"
                                                  id="entertainment-more-detail1">More Details</a>
@@ -68,10 +68,10 @@ $.ajax({
                                             
                                             <div class="card-body">
                                                 <h5 class="card-title" id="nature-title1">
-                                                    ${data.articles[i].title.slice(0, 50) + "...."}
+                                                    ${data.articles[i].title.slice(0, 30) + "...."}
                                                 </h5>
                                                 <p class="card-text" id="nature-text1">
-                                                    ${data.articles[i].description.slice(0, 80) + "...."}
+                                                    ${data.articles[i].description.slice(0, 40) + "...."}
                                                 </p>
                                                 <a href="${data.articles[i].url}" class="more-detail"
                                                  id="nature-more-detail1">More Details</a>
@@ -97,10 +97,10 @@ $.ajax({
                                         <div class="card" id="card1" style="width: 12rem;">
                                             <div class="card-body">
                                                 <h5 class="card-title" id="sport-title1">
-                                                    ${data.articles[i].title.slice(0, 50) + "...."}
+                                                    ${data.articles[i].title.slice(0, 30) + "...."}
                                                 </h5>
                                                 <p class="card-text" id="sport-text1">
-                                                    ${data.articles[i].description.slice(0, 80) + "...."}
+                                                    ${data.articles[i].description.slice(0, 40) + "...."}
                                                 </p>
                                                 <a href="${data.articles[i].url}" class="more-detail"
                                                  id="sport-more-detail1">More Details</a>
