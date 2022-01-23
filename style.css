@@ -4,11 +4,8 @@
     padding: 0;
 }
 body{
-    background-image: url('./mal.jpeg');
-    background-size: cover;
-    /* background-color: rgb(8, 19, 82); */
-    background-position: center;
-    background-attachment: fixed;
+
+    background-color: #0B193E;
     margin:auto;
    padding:0px;
    display:flex;
