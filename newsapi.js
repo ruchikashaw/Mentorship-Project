@@ -12,6 +12,7 @@ let categories =["Business","Technology","Sports","Science","Entertainment","Hea
 for(let i=0;i<categories.length;i++){
     let div = document.createElement("div");
     div.innerText = categories[i];
+    div.className="categories";
     div.addEventListener("click",function(){
         scree.main.querySelector(".categories .active").classList.remove("active");
         div.classList.add("active");

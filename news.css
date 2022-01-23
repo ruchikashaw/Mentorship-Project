@@ -1,71 +1,79 @@
-*{
-    color: white;
+* {
+  color: white;
 }
 
-.app{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    max-width: 640px;
-    left: 50%;
-    top: 0px;
+.categories {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-screen {
+  padding: 0 30px;
+    overflow: hidden;
+}
+.main-screen .logo {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.main-screen .categories {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-screen .news-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px auto;
+    overflow-y: scroll !important;
+    height: 530px;
+    scrollbar-width: 0px;
+    scrollbar-color: transparent;
     
-    transform: translateX(-50%);
-
+}
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.app .screen{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
 }
 
-.hidden{
-    display: none;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #112a6e;
+    border-radius: 3px;
 }
 
-.main-screen{
-    overflow-y: auto;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #112a6e;
 }
-.main-screen .logo{
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-weight: 600;
-}
-
-.main-screen .categories{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+.main-screen .news-list .item {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  background-color: #112a6e;
 }
 
-.main-screen .news-list{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    align-items: center;
-}
-.main-screen .news-list > .item{
-    max-width: 250px;
-    border: 1px solid #ddd;
-    padding: 10px;
+.main-screen .news-list .details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.main-screen .news-list > .item-details{
-    padding: 10px;
+.main-screen .news-list .details p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
 }
-
-.main-screen .news-list > .item-details h2{
-    font-size: 16px;
-    border-bottom: 10px;
-}
-    
-    
