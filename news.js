@@ -1,9 +1,9 @@
 $.ajax({
-    url: "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=fa9936e8bc8748b986863899178bcb16",
+    url: "http://api.mediastack.com/v1/news?access_key=c1d743069e18b5a83d22b64c96cbb6ef&countries=us&categories=technology",
     success: function (data) {
 
         for (let i = 0; i < 3; i++) {
-            let contain2El = document.querySelector("#contain2");
+            let contain2El = document.querySelector("#contain3");
             contain2El.innerHTML += `<div>
                                         <div class="card" id="card1" style="width: 12rem;">
                                             <div class="card-body">
@@ -28,11 +28,11 @@ $.ajax({
 });
 
 $.ajax({
-    url: "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=fa9936e8bc8748b986863899178bcb16",
+    url: "http://api.mediastack.com/v1/news?access_key=c1d743069e18b5a83d22b64c96cbb6ef&countries=us&categories=business",
     success: function (data) {
 
         for (let i = 0; i < 3; i++) {
-            let contain3El = document.querySelector("#contain3");
+            let contain3El = document.querySelector("#contain4");
             contain3El.innerHTML += `<div>
                                         <div class="card" id="card1" style="width: 12rem;">
                                            
@@ -58,11 +58,11 @@ $.ajax({
 });
 
 $.ajax({
-    url: "https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=fa9936e8bc8748b986863899178bcb16",
+    url: "http://api.mediastack.com/v1/news?access_key=c1d743069e18b5a83d22b64c96cbb6ef&countries=us&categories=sports",
     success: function (data) {
 
         for (let i = 0; i < 3; i++) {
-            let contain4El = document.querySelector("#contain4");
+            let contain4El = document.querySelector("#contain5");
             contain4El.innerHTML += `<div>
                                         <div class="card" id="card1" style="width: 12rem;">
                                             
@@ -88,7 +88,7 @@ $.ajax({
 });
 
 $.ajax({
-    url: "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=fa9936e8bc8748b986863899178bcb16",
+    url: "http://api.mediastack.com/v1/news?access_key=c1d743069e18b5a83d22b64c96cbb6ef&countries=us&categories=science",
     success: function (data) {
 
         for (let i = 0; i < 3; i++) {
