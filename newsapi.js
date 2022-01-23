@@ -1,18 +1,19 @@
-let newsAPI = "http://api.mediastack.com/v1/news?access_key=0ac9d0fd9011320844239fe5c66e09b3&countries=in";
+let newsAPI = "https://newsdata.io/api/1/news?apikey=pub_39127f8a40b5b3a0555c8ff0816fffc7d1e0&language=en";
 
 let app=document.querySelector(".app");
-let screen = {
+
+let scree = {
     main:app.querySelector(".main-screen"),
     news:app.querySelector(".news-screen")
 };
 
-let categories =["Business","General","Sports","Science","Entertainment","Health"];
+let categories =["Business","Technology","Sports","Science","Entertainment","Health"];
 
 for(let i=0;i<categories.length;i++){
     let div = document.createElement("div");
     div.innerText = categories[i];
     div.addEventListener("click",function(){
-        screen.main.querySelector(".categories .active").classList.remove("active");
+        scree.main.querySelector(".categories .active").classList.remove("active");
         div.classList.add("active");
         fetchCategoryNews(categories[i]);
     });
@@ -22,16 +23,17 @@ for(let i=0;i<categories.length;i++){
         fetchCategoryNews(categories[i]);
     }
 
-    screen.main.querySelector(".categories").appendChild(div);
+    scree.main.querySelector(".categories").appendChild(div);
 }
 
 
 async function fetchCategoryNews(catagory){
-    screen.main.querySelector(".news-list").innerHTML="";
+    scree.main.querySelector(".news-list").innerHTML="";
     try{
-        const res = await fetch(newsAPI + "&categories=" + catagory.toLowerCase());
+        const res = await fetch(newsAPI + "&category=" + catagory.toLowerCase());
         const data = await res.json();
-        let news = data.data;
+        console.log(data);
+        let news = data.results;
         console.log(news);
         for(let i=0;i<4;i++){
             let div=document.createElement("div");
@@ -46,7 +48,7 @@ async function fetchCategoryNews(catagory){
                 <p>${news[i].description}</p>
               </div>`
             ;
-            screen.main.querySelector(".news-list").appendChild(div);
+            scree.main.querySelector(".news-list").appendChild(div);
         }
     }catch(msg){}
 }
