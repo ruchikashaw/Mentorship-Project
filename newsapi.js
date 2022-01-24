@@ -1,4 +1,4 @@
-let newsAPI = "https://newsdata.io/api/1/news?apikey=pub_3934d641f722bfd6ad4c7edf3b6fa32b8b49&language=en";
+let newsAPI = "https://newsdata.io/api/1/news?apikey=pub_396332f4194ab52519f7e7abbce09b0935b8";
 
 let app=document.querySelector(".app");
 
