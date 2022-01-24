@@ -12,7 +12,7 @@
 
 .main-screen {
   padding: 0 30px;
-    overflow: hidden;
+  overflow: hidden;
 }
 .main-screen .logo {
   color: white;
@@ -33,31 +33,30 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 30px auto;
-    overflow-y: scroll !important;
-    height: 530px;
-    scrollbar-width: 0px;
-    scrollbar-color: transparent;
-    
+  overflow-y: scroll !important;
+  height: 530px;
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
+  background: #f1f1f1;
+  border-radius: 3px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #112a6e;
-    border-radius: 3px;
+  background: #112a6e;
+  border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #112a6e;
+  background: #112a6e;
 }
 .main-screen .news-list .item {
   border-radius: 20px;
